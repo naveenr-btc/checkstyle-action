@@ -12,4 +12,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag checkstyle-action:$(date +%s)
+      run: docker build . --file Dockerfile --build-arg checkstyle_version="$CHECKSTYLE_VERSION" --tag checkstyle-action:$(date +%s)
