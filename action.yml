@@ -31,4 +31,4 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
-    - ${{checkstyle_version}}
+    - ${{input.checkstyle_version}}
