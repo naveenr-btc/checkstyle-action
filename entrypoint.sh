@@ -1,6 +1,7 @@
 #!/bin/sh
 
 echo "Running check"
+echo "creating docker image with alpine version: $CHECKSTYLE_VERSION"
 
 export REVIEWDOG_GITHUB_API_TOKEN="${INPUT_GITHUB_TOKEN}"
 
