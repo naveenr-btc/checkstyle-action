@@ -24,6 +24,9 @@ inputs:
   tool_name:
     description: 'Tool name to use for reviewdog reporter'
     default: 'reviewdog'
+  checkstyle_version:
+    description: 'Version for the Checkstyle'
+    default: '8.32'
 runs:
   using: 'docker'
   image: 'Dockerfile'
